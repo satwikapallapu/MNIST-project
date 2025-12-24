@@ -2,42 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MNIST Multi-Class Classification Project</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            margin: 40px;
-            background-color: #f9f9f9;
-            color: #222;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        code {
-            background: #eef;
-            padding: 3px 6px;
-            border-radius: 4px;
-        }
-        .box {
-            background: #ffffff;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 5px solid #3498db;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .diagram {
-            background: #f0f0f0;
-            padding: 15px;
-            font-family: monospace;
-            white-space: pre;
-            overflow-x: auto;
-            border-radius: 6px;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -58,27 +23,25 @@ Multiple classification models are trained, evaluated, compared using
 
 <div class="diagram">
 Raw MNIST Data
-      ↓
+      -->
 Null Value Check
-      ↓
+      -->
 Train-Test Split
-      ↓
-Label Binarization
-      ↓
+      -->
 Model Training
-      ↓
+      -->
 Predictions & Probabilities
-      ↓
+      -->
 Evaluation Metrics
-      ↓
+      -->
 ROC–AUC Curve Comparison
-      ↓
+      -->
 Best Model Selection (SVM)
-      ↓
+      -->
 Hyperparameter Tuning (GridSearchCV)
-      ↓
+      -->
 Final Evaluation
-      ↓
+      -->
 Model Serialization (Pickle)
 </div>
 
@@ -176,19 +139,7 @@ Flattening converts 2D arrays into a 1D format, which helps in:
 </ul>
 </div>
 
-<div class="diagram">
-Predicted Probabilities
-        ↓
-Flatten using ravel()
-        ↓
-Compare with True Labels
-        ↓
-Calculate FPR & TPR
-        ↓
-Plot ROC Curve
-        ↓
-Compute AUC
-</div>
+
 
 <p>
 ROC–AUC curves were plotted for <b>all models</b> to compare their performance visually.
@@ -256,7 +207,15 @@ loaded later without retraining.
     <li>Pandas</li>
     <li>Matplotlib</li>
     <li>Scikit-learn</li>
-    <li>Scikit-learn Classification Models</li>
+     <li>K-Nearest Neighbors (KNN)</li>
+    <li>Naive Bayes</li>
+    <li>Logistic Regression</li>
+    <li>Decision Tree</li>
+    <li>Random Forest</li>
+    <li>AdaBoost</li>
+    <li>Gradient Boosting</li>
+    <li>XGBoost</li>
+    <li>Support Vector Machine (SVM)</li>
     <li>Accuracy Score</li>
     <li>Classification Report</li>
     <li>Confusion Matrix</li>
